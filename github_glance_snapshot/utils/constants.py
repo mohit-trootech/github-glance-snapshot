@@ -42,7 +42,3 @@ class CeleryConfig:
     """Celery Configuration"""
 
     CELERY_BROKER_URL = "redis://localhost:6379/0"
-
-
-class AppLabelsModel:
-    pass

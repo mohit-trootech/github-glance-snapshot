@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Auth User Model
 APPEND_SLASH = True
-
+AUTH_USER_MODEL = "users.User"
 # SECURITY WARNING: keep the secret key used in production secret!
 # -------------------------------------------------
 SECRET_KEY = env.get("SECRET_KEY")
@@ -27,7 +27,7 @@ THIRD_PARTY_APPS = [
     "corsheaders",
 ]
 
-PROJECT_APPS = ["glance.apps.GlanceConfig"]
+PROJECT_APPS = ["glance.apps.GlanceConfig", "users.apps.UsersConfig"]
 DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
