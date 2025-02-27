@@ -6,14 +6,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 DEBUG = True
-ALLOWED_HOSTS = [
-    "*",
-    "127.0.0.1",
-    "localhost",
-    "http://localhost:3000",
-    "http://192.168.0.31:3000",
-    "https://accounts.google.com/",
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Cors Allowed Origin

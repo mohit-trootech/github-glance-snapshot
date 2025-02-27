@@ -18,7 +18,7 @@ class Settings:
     USE_TZ = True
     STATIC_URL = "static/"
     STATIC_ROOT = "assets/"
-    STATIC_FILES_DIRS = "static/"
+    STATIC_FILES_DIRS = "templates/static/"
     TEMPLATES_URLS = "templates/"
     MEDIA_URL = "media/"
     MEDIA_ROOT = "media/"
@@ -42,3 +42,8 @@ class CeleryConfig:
     """Celery Configuration"""
 
     CELERY_BROKER_URL = "redis://localhost:6379/0"
+
+
+class Templates:
+    BASE_TEMPLATE = "base.html"
+    USER_CARD = "users/user_card.html"
