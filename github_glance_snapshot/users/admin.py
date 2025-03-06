@@ -46,4 +46,4 @@ class UserAdmin(UserAdmin):
             {"fields": ("avatar",)},
         ),
     )
-    filter_horizontal = ("groups", "user_permissions", "following")
+    filter_horizontal = ("groups", "user_permissions")

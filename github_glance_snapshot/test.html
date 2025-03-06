@@ -1,4 +1,21 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Glance</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
 <div class="card" data-bs-theme="dark" style="width: 32rem">
   <div class="d-flex align-items-center gap-3 px-3 py-2">
     <h3 class="card-title mb-0 fw-bold">Mohit Prajapat</h3>
@@ -59,7 +76,7 @@
       </div>
       <div class="col-md-5">
         <img
-          src="{% static 'img/logo/github-cat.png' %}"
+          src="/static/img/logo/github-cat.png"
           class="img-thumbnail rounded-circle mx-auto d-block border-5 border-warning w-75 shadow-sm img-fluid"
           alt="Logo"
         />
@@ -67,4 +84,6 @@
     </div>
   </div>
 </div>
-{% endblock %}
+
+  </body>
+</html>

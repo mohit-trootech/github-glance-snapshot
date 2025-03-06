@@ -47,3 +47,12 @@ class CeleryConfig:
 class Templates:
     BASE_TEMPLATE = "base.html"
     USER_CARD = "users/user_card.html"
+
+
+class GithubUrls:
+    """Github Urls"""
+
+    GISTS_LIST = "https://api.github.com/users/mohit-trootech/gists"
+    GIST = "https://api.github.com/users/mohit-trootech/gists/{gist}"
+    REPOS_LIST = "https://api.github.com/users/mohit-trootech/repos"
+    REPO = "https://api.github.com/users/mohit-trootech/repos/{repo}"

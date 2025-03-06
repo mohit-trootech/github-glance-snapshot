@@ -6,7 +6,7 @@ User = models.USER
 
 
 class TestTemplate(DetailView):
-    template_name = Templates.BASE_TEMPLATE
+    template_name = Templates.USER_CARD
     model = User
 
 
